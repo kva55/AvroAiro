@@ -1,4 +1,4 @@
-# Neutrino
+# AvroShell
 Work in progress name: Jumping Airgaps with Networkless Exfiltration
 
 ### Requirements
@@ -7,9 +7,9 @@ Work in progress name: Jumping Airgaps with Networkless Exfiltration
 - pcap
 - scapy
 
-## Neutrino Usage
+## AvroShell Usage
 ```
-python neutrino-shell.py -h
+python AvroShell.py -h
 
 usage:
 
@@ -23,11 +23,11 @@ options:
 sudo airmon-ng check
 sudo airmon-ng check kill
 sudo airmon-ng start <wlan-adapter> <channel>
-sudo python3 neutrino-shell.py
+sudo python3 AvroShell.py
 ```
 ### On victim machine (windows):
 - Currently the exfiltrated message is hardcoded in the script
 ```
-python neutrino-victim.py
+python AvroShell.py
 ```
 
