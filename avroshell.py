@@ -1,7 +1,5 @@
 import argparse
 import subprocess
-from listener import * # Import listener for attacker
-
 
 # Note, you will need admin/or root privileges to run this script
 
