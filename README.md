@@ -1,4 +1,4 @@
-# AvroShell
+# AvroAiro
 Work in progress name: Jumping Airgaps with Networkless Exfiltration
 
 ### Requirements
@@ -7,9 +7,9 @@ Work in progress name: Jumping Airgaps with Networkless Exfiltration
 - pcap
 - scapy
 
-## AvroShell Usage
+## AvroAiro Usage
 ```
-python AvroShell.py -h
+python AvroAiro.py -h
 
 usage:
 
@@ -23,11 +23,11 @@ options:
 sudo airmon-ng check
 sudo airmon-ng check kill
 sudo airmon-ng start <wlan-adapter> <channel>
-sudo python3 AvroShell.py
+sudo python3 AvroAiro.py
 ```
 ### On victim machine (windows):
 - Currently the exfiltrated message is hardcoded in the script
 ```
-python AvroShell.py
+python AvroAiro.py
 ```
 
