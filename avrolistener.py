@@ -46,7 +46,7 @@ def display_message(frame):
 		mac_payload = frame.addr2
 		#print(frame.src)
 		try:
-			if mac_payload.lower().startswith(startbytes+":"):
+			if mac_payload.lower().startswith("be:ef:ff:"):
 				#print("Received info on session [+]")
 				ctime = time.time()
 				if session_started == "False" and str(mac_payload) != endmac:
@@ -85,6 +85,7 @@ def display_message(frame):
 						else:
 							#print(chr(byte), end="", flush=True)
 							chunk_d += str(chr(byte))
+							#print(chunk_d)
 
 					a = str(str(mac_payload).split(":")[3])
 					buffer[chunk_num_dec] = chunk_d
@@ -106,13 +107,18 @@ def display_message(frame):
 			pass
 
 def start_collector():
-	sniff(iface="wlp0s12f0mon", prn=display_message, store=0)
+	sniff(iface="wlan1", prn=display_message, store=0)
 
 def main():
-	sniff(iface="wlp0s12f0mon", prn=display_message, store=0)
+        print("AvroAiro: Out-of-Band Networkless Exfiltration Tool (listener)")
+        print("Author:    Elysee Franchuk (kva55)")
+        print("github:    https://github.com/kva55/AvroAiro/\n")
+        print("[INFO] Using default identifier \"BE:EF:FF\"")
+        sniff(iface="wlan0", prn=display_message, store=0)
+        
 	#thread = threading.Thread(target=start_collector)
 	#thread.start()
-	print(buffer)
+        print(buffer)
 
 
 if __name__ == "__main__":
