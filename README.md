@@ -1,7 +1,7 @@
 # AvroAiro
 BSides Presentation: Jumping Airgaps with Networkless Exfiltration
 
-![oob-fram-vs-wlan drawio](https://github.com/user-attachments/assets/deadfd2e-4486-43df-a231-c0deaf569ab3)
+![oob-fram-vs-wlan drawio (1)](https://github.com/user-attachments/assets/38563265-764a-4beb-9d37-553598e3fdae)
 
 ## Overview - what is this?
 AvroAiro is a tool that was created to exfiltrate data via Probe Requests (PRQs).
