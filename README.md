@@ -31,7 +31,6 @@ usage:
 
 options:
 
-
 ```
 ### On Attacker Machine:
 - Make sure the the proper channel and band is selected.
