@@ -17,7 +17,7 @@ import subprocess
 identifier       = "BEEFFF"    # Set default MAC OUI as something that isn't registered - collisions should not occur
 operating_system = 0           # OS not set by default
 WNIC_Name        = "Wi-Fi 2"   # The WNIC name and reg key path are hardcoded. If regex is used, every MAC address for every interface would need to be overwritted.
-REG_KEY_PATH     = "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class\\{4d36e972-e325-11ce-bfc1-08002be10318}\\0004"
+REG_KEY_PATH     = "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Class\\{WNIC-UUID}\\0000" #<-- Change this!
 output           = ""
 
 # This is the command to run for windows
